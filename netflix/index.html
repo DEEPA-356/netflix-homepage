@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+        <title>netflix homepage</title>
+        <style lang="">
+
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                height: 100vh;
+                width: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('background.jpg');
+            }
+            .header{
+                height: 5rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+            .logo img{
+                height: 20rem;
+                width: 30rem;
+                
+            }
+            .buttons{
+                
+                width: 30%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .Eng{
+                height: 3rem;
+                width: 10rem;
+                background: black;
+                color: white;
+                border: 1px solid white;
+                border-radius: 5px;
+                font-size: 1.2rem;
+            }
+            .sign{
+                height: 3rem;
+                width: 10rem;
+                background: red;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                font-size: 1.2rem;
+            }  
+            .middle{
+                height: 80vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 15rem 15rem;
+            }
+            .middle h1{
+                color: white;
+                padding: 10px 20px;
+                font-size: 3.5rem;
+                font-weight: bold;
+            }
+            .middle h2{
+                color: white;
+                padding: 10px 20px;
+                font-size: 2.5rem;
+                font-weight: 300;
+            }
+            p{
+                color: white;
+                font-size: 1.3rem;
+                font-weight: 100;
+                padding: 20px 20px;
+                
+            }
+            .started{
+                height: 4rem;
+                width: 10rem;
+                color: white;
+                font-size: 1.2rem;
+                background: red;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                padding: 20px 10px;
+            }
+            input[type=text]{
+                height: 4rem;
+                width: 20rem;
+                font-size: 1.3rem;
+                background: transparent;
+                color: white;
+                border: 1px solid #8888;
+            }
+            .mbtns{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            
+        </style>
+    </head>
+    <body>
+       <div class="container">
+          <div class="header">
+              <div class="logo">
+                  <img src="netflix.png" alt="">
+              </div>
+              <div class="buttons">
+                   <button class="Eng">English</button>
+                   <button class="sign">Sign in</button>
+              </div>
+          </div>
+          <div class="middle">
+            <h1>Unlimited Movies, TV shows and more</h1>
+            <h2>Watch anywhere, cancel anytime</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership</p>
+            <div class="mbtns">
+                <input type="text" placeholder="Enter email">
+                <button class="started">Get Started > </button>
+            </div>
+          </div>
+       </div> 
+    </body>
+</html>
